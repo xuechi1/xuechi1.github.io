@@ -46,6 +46,7 @@ header {
   width: 100%;
   height: 10vh;
   z-index: 9999;
+  background-color: #5C4033;
 }
 
 header .logo {
@@ -127,6 +128,7 @@ header .hamburger-menu {
 header .mobile-nav {
   display: none;
 }
+
 
 /* Hero Section */
 .hero {
