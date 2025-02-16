@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>James Albert Dictionary Lookup</h1>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="wordInput" 
+                placeholder="Enter a word..."
+                onkeypress="if(event.key === 'Enter') lookupWord()"
+            >
+            <button onclick="lookupWord()">Search</button>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <div id="wordInfo"></div>
+            <div id="definitions"></div>
+            <div id="examples"></div>
+            <div id="synonyms"></div>
+        </div>
+
+        <div id="history" class="history-container">
+            <h3>Recent Searches</h3>
+            <div id="searchHistory"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
